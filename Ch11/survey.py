@@ -1,4 +1,5 @@
 class AnonymousSurvey():
+    #for employee information
 
     def __init__(self, question):
         self.question = question
