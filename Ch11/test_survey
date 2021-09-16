@@ -1,0 +1,15 @@
+
+import unittest
+from survey import AnonymousSurvey
+from employee import Employee
+
+class TestEmployee(unittest.TestCase):
+
+    def test_store_response(self):
+        question = "Enter employee first name:"
+        first = AnonymousSurvey(question)
+        first.store_response('Buck')
+
+        self.assertIn('buck', first.responses)
+
+unittest.main()
