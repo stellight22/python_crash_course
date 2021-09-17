@@ -1,24 +1,18 @@
 
 import unittest
-from survey import AnonymousSurvey
 from employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
     def setUp(self):
-        question = "Enter employee details:"
-        self.employee_info = AnonymousSurvey(question)
-        self.responses = ['bob', 'anderson', 80000]
+        self.employee_info = Employee('bob', 'anderson', 80000)
     
-    def test_store_single_response(self):
-        self.employee_info.store_response(self.responses[0])
-        self.assertIn(self.responses[0], self.employee_info.responses)
+    def test_give_default_raise(self):
+        self.employee_info.give_raise()
+        self.assertEqual(self.employee_info.salary, 85000)
 
-    def test_store_three_responses(self):
-        for response in self.responses:
-            self.employee_info.store_response(response)
-        for response in self.responses:
-            self.assertIn(response, self.employee_info.responses)
-
+    def test_give_custom_raise(self):
+        self.employee_info.give_raise(10000)
+        self.assertEqual(self.employee_info.salary, 90000)
 
 unittest.main()
