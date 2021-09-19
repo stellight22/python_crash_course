@@ -1,18 +1,17 @@
+#Ch11 test that the data has been stored
 class AnonymousSurvey():
-    #for employee information
-
     def __init__(self, question):
         self.question = question
         self.responses = []
 
     def show_question(self):
-        print(self.question)
+        print(question)
     
     def store_response(self, new_response):
         self.responses.append(new_response)
-    
+
     def show_results(self):
-        print("Employee list:")
-        for response in self.responses:
-            print('- '+response)
-    
+        print("survey results:")
+        for response in responses:
+            print('- ' + response)
+

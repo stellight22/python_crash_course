@@ -1,12 +1,11 @@
-#Ch 11-3
 class Employee():
-    def __init__(self, f_name, l_name, salary):
-        self.f_name = f_name
-        self.l_name = l_name
+    def __init__(self, first_name, last_name, salary):
+        self.first_name = first_name
+        self.last_name = last_name
         self.salary = salary
-
-    def give_raise(self, addition = 5000):
-        self.salary += addition
-
     
+    def give_raise(self, raise = 5000):
+        self.salary += raise
+        
     
+
