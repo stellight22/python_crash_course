@@ -1,0 +1,13 @@
+first = 'word'
+second = 'werd'
+print(f"This is the {first} and this is the {second}")
+
+#printing multiple things with new lines in single line
+print("This is a list heading:\n\tfirst_bullet\n\tsecond_bullet")
+
+#get rid of whitespace
+sentence = " extra spa ce  o "
+print(sentence)
+print(sentence.rstrip())
+print(sentence.lstrip())
+print(sentence.strip())
