@@ -16,3 +16,13 @@ to_do_list.remove('work')
 
 to_do_list.insert(0, 'work hard, play hard')
 print(to_do_list)
+
+# these are permanent
+to_do_list.sort()
+to_do_list.reverse()
+
+# if I want to reverse sort without permanent change
+print(sorted(to_do_list, reverse = True))
+print(sorted(to_do_list))
+
+

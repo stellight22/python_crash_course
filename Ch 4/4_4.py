@@ -2,3 +2,7 @@
 
 for x in range(1,1000001):
     print(x)
+
+million = [x for x in range(1,1000001)]
+print(million)
+

@@ -6,3 +6,6 @@ for x in range(1,1000001):
 
 print(million_list)
 print(sum(million_list))
+print(min(million_list))
+print(max(million_list))
+

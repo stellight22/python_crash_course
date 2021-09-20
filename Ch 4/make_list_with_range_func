@@ -1,0 +1,4 @@
+#using range() to make a list of nums
+
+number_list = list(range(1,7))
+print(number_list)
