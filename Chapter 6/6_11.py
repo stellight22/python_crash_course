@@ -8,12 +8,12 @@ cities = {
     },
     'Cesky Krumlov':{
         'country': 'Czech Republic', 
-        'fact': 'In S-shaped loop and has castle',
+        'fact': 'an S-shaped loop and has castle',
         'population': 12980
     },
     'Stepantsminda': {
         'country': 'Georgia',
-        'fact': 'snowy hilltop and hotsprings',
+        'fact': 'snowy hilltops and hotsprings',
         'population': 1326
     },
     'Furnas':{
