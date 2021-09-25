@@ -1,4 +1,6 @@
 #using arbitrary keyword arguments
+# ** is for dictionary values
+# * is for arbitrary number of parameters
 
 def build_profile(first, last, **user_stats):
     profile = {}
