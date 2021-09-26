@@ -6,8 +6,9 @@ favorite_languages = {
 }
 
 # this prints the key and value as pair of a dict
-for name, language in favorite_languages.items():
-    print(name.title() + ': ' + language)
+def cookies():
+    for name, language in favorite_languages.items():
+        print(name.title() + ': ' + language)
 
 another_list = ['paul', 'leslie']
 for name in favorite_languages.keys():
@@ -17,4 +18,5 @@ for name in favorite_languages.keys():
         print(" Hi " + name.title()+ ", we have you in the dictionary!")
     else:
         print("Hi " + name.title()+ ", we need to get you on file!")
+
 
