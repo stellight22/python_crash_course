@@ -1,0 +1,28 @@
+#Test 3 notes
+# using while and counter as switch
+
+switch_on = True
+print("Welcome to the questionnaire")
+counter = 1
+while switch_on:
+    answer = input("Enter name:\n")
+    if answer.lower()== ' ':
+        switch_on = False
+    elif counter == 5:
+        switch_on = False
+    else:
+        counter +=1
+
+# a different way
+
+switch_on = True
+print("Welcome to the questionnaire")
+counter = 1
+while switch_on and counter <=5:
+    answer = input("Enter name:\n")
+    if answer.lower() == ' ':
+        switch_on= False
+    else:
+        counter +=1
+
+        
