@@ -1,10 +1,15 @@
 
 
-cats = ['stella']
-for cat in cats:
-    print(cat)
+print(range(0,10))
 
-dogs = 'stella'
-for dog in dogs:
-    print(dog + "woof")
+x = range(0,10)
+
+print(x)
+
+for x in range(0,10):
+    print(x)
+
+x = 3
+
+print(list(range(0,10)))
 
