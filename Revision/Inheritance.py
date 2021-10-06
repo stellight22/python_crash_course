@@ -1,4 +1,4 @@
-#this one is on superclasses
+#this one is on superclass
 
 class Car():
     def __init__(self, make, model, year):
