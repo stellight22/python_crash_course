@@ -1,15 +1,13 @@
 #this one is on superclasses
 
 class Car():
-    def __init__(self, make, model, year):
+    def __init__(self, *make):
         self.make = make
-        self.model = model
-        self.year = year
         self.miles = 0
 
     def get_descriptive_name(self):
-        desc = str(self.year)+ " " + self.make + ' '+ self.model
-        return desc.title()
+        print(self.make)
+        print("describe car")
 
     def read_odometer(self):
         print("This car has"+ str(self.miles) + " miles on it.")
@@ -34,7 +32,6 @@ class HybridCar(Car):
 
 
 mclaren223 = HybridCar(year = 4400,make ='mcLaren', model ='LT745')
+
 print(mclaren223.get_descriptive_name())
 mclaren223.describe_finish()
-
-my_c = HybridCar()

@@ -31,10 +31,3 @@ class HybridCar(Car):
     
     def describe_finish(self):
         print("This hybrid has a finish that makes it " + self.finish + " from the parent models.")
-
-
-mclaren223 = HybridCar(year = 4400,make ='mcLaren', model ='LT745')
-print(mclaren223.get_descriptive_name())
-mclaren223.describe_finish()
-
-my_c = HybridCar()

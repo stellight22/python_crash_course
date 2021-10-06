@@ -10,9 +10,11 @@ class Restaurant():
     def open_restaurant(self):
         print(self.name+ " is open for business!")
 
-R1 = Restaurant("Mel's Diner", "American")
+#instantiate restaurant
 
-R1.describe_restaurant()
-R1.open_restaurant()
+rocky_icecream = Restaurant("Mel's Diner", "American")
+
+rocky_icecream.describe_restaurant()
+rocky_icecream.open_restaurant()
     
     
