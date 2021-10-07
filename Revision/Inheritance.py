@@ -2,10 +2,14 @@
 
 class Car():
     def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.miles = 0
+        pass
+        # self.make = make
+        # self.model = model
+        # self.year = year
+        # self.miles = 0
+    
+    def printy(self):
+        print("car")
 
     def get_descriptive_name(self):
         desc = str(self.year)+ " " + self.make + ' '+ self.model
@@ -25,9 +29,22 @@ class Car():
 
 #child class
 class HybridCar(Car):
-    def __init__(self, make, model, year):
-        super().__init__(make, model, year)
+    def __init__(self, make, model):
+    #=     super().__init__(make, model, year)
         self.finish = 'different'
     
     def describe_finish(self):
         print("This hybrid has a finish that makes it " + self.finish + " from the parent models.")
+
+    def printy(self):
+        super().printy()
+    
+mom_car = Car('hyundai', 'azera', 2019)
+baby_car = HybridCar('kia', 'soul')
+
+mom_car.printy()
+baby_car.printy()
+
+
+
+
