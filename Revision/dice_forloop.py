@@ -1,3 +1,7 @@
+import time
+
+start = time.time()
+
 from random import randint
 
 class Die():
@@ -13,3 +17,4 @@ d = Die()
 for x in range(1,11):
     d.roll_die()
 
+print(time.time() - start)
