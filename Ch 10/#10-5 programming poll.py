@@ -1,5 +1,5 @@
 #10-5 programming poll
-filename = "learning_python.txt"
+filename = '/Users/interstellahyeon/Documents/GitHub/python_crash_course/Ch 10/learning_python.txt'
 
 print("Enter 'n' when done")
 
