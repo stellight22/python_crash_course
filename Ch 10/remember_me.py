@@ -3,8 +3,9 @@ import json
 
 filename = 'username.json'
 try:
-    with open(filename, 'w') as f_obj:
+    with open(filename) as f_obj:
         username = json.load(f_obj)
+        print("try block")
 except FileNotFoundError:
     username = input("What is your name?")
     with open(filename, 'w') as f_obj:
@@ -13,4 +14,4 @@ except FileNotFoundError:
 else:
     print("Welcome back, "+ username + "!")
 
-    
+
