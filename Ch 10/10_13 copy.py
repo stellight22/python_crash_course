@@ -19,12 +19,21 @@ def get_new_username():
 
 def greet_user():
     username = get_stored_username()   #empty, neither true nor false
-    print(type(username))
-    if username:
-        print("Welcome back, "+ username + "!")
+    prompt = "Hello, do you have an account with us?"
+    answer = input(prompt)
+    if answer.lower() == 'y':
+        print(username)
+        ask = "Is your username correct(Y/N)?\n"
+        ans = input(ask)
+        if ans.lower == 'y':
+            print("Welcome back, "+ username + "!")
+        else:
+            username = get_new_username()
+            print("We'll remember you when you come back, "+ username + "!")
     else:
         username = get_new_username()
-        print("We'll remember you when you come back, "+ username + "!")
-
+        print("We will remember you, "+username)
+        
+ 
 
 greet_user()
