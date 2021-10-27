@@ -41,4 +41,12 @@ problems:
 -maybe people just want to be loved while being fat and lazy
 
 
+update 10/27/2021
+The person is observed in patterns and habits and tells them exactly why the 
+goal was not met
+
+
+
+
+
 """
