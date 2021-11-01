@@ -11,13 +11,15 @@ class Model(Supra):
 
     def __init__(self, color):
         super().__init__(color)
+        
 
     def m(self):
         print(self.color)
 
 
-model = Model('flower')
+
 red = Supra('red')
+model = Model('grey')
 
 red.s()
 model.m()

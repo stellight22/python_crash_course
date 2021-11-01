@@ -1,6 +1,9 @@
 #dictionary function
 def main():
-    dictionari = {'key2': 3, 'key4': 'C2569'}
+    dictionari = {
+        1:3, 
+        5:7,
+        }
     print(add_dict(dictionari))
     print(del_dict(dictionari))
     print(dictionari)
@@ -12,8 +15,8 @@ def add_dict(dictionarii):
     return dictionarii
     
 def del_dict(dictionarii):
-    for k,v in dictionarii.items():
-        if dictionarii[k] < v:
+    for k in dictionarii:
+        if dictionarii[k] < k:
             del dictionarii[k]
     return dictionarii
         
